@@ -1,0 +1,70 @@
+
+<!-- para todo tipo de formulário usamos a tag FORM que ja chama um método como submit -->
+
+<form (ngSubmit)="adicionarTarefa()" class="flex"> 
+  <div class="item-flex">
+    <div class="jumbotron">
+      <p>Sistema de Tarefas</p>
+      <td></td>
+      <input type="text" placeholder="Tarefa" [(ngModel)]="newTarefa.nome" name="tarefa" style="width: 41%;">
+      <input type="text" placeholder="Data" [(ngModel)]="newTarefa.data" name="data" style="width: 41%;">
+      <button class="btn btn-fab" submit >Adicionar</button>
+      
+      <td><div style="height: 5px;"></div></td>
+      
+      <div class="table">
+          <table>
+            <tr>
+                <th>Tarefa</th>
+                <th>Data</th>
+                <td><div style="width: 50px; height: 50px;"></div></td>
+                <th>Opções</th>
+            </tr>
+            <tbody>
+              <tr>
+                   <td>Reunião com time do projeto</td>
+                   <td>12/10/2018</td>
+                   <td><div style="width: 1px; height: 1px;"></div></td>
+                   <button class="btn btn-fab" submit >Editar</button>
+                   <td><div style="width: 1px; height: 1px;"></div></td>
+                   <button class="btn btn-fab" submit >Deletar</button>
+               </tr>
+              <tr>
+                  <td>Entrega do trabalho de LSI</td>
+                  <td>19/10/2018</td>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Editar</button>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Deletar</button>
+               </tr>
+               <tr>
+                  <td>Finalização do Projeto Arduino</td>
+                  <td>20/10/2018</td>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Editar</button>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Deletar</button>
+              </tr>
+              <tr>
+                  <td>Comprar itens do PC</td>
+                  <td>22/11/2018</td>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Editar</button>
+                  <td><div style="width: 1px; height: 1px;"></div></td>
+                  <button class="btn btn-fab" submit >Deletar</button>
+              </tr>
+              <tr>
+                <td>Provas finais</td>
+                <td>25/11/2018</td>
+                <td><div style="width: 1px; height: 1px;"></div></td>
+                <button class="btn btn-fab" submit >Editar</button>
+                <td><div style="width: 1px; height: 1px;"></div></td>
+                <button class="btn btn-fab" submit >Deletar</button>
+              </tr>
+               </tbody>
+        </table>
+      </div>
+      
+    </div>  
+  </div>
+</form>
